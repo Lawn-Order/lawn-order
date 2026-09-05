@@ -2,169 +2,473 @@
 <html lang="de">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Lawn & Order | Rasenpflege, Tests und ehrliche Empfehlungen</title>
-  <meta name="description" content="Lawn & Order: verständliche Rasenpflege, ehrliche Praxistests und ausgewählte Produktempfehlungen aus eigener Anwendung.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Lawn & Order | Rasenpflege verständlich erklärt</title>
+
+  <meta name="description"
+        content="Lawn & Order: verständliche Rasenpflege aus der Praxis. Wissen zu Neuanlage, Mähen, Bewässerung, Düngung, Saatgut und typischen Rasenproblemen.">
+
   <link rel="stylesheet" href="assets/style.css">
+
+  <style>
+    .guide-grid {
+      display: grid;
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .guide-card {
+      display: block;
+      padding: 28px;
+      border: 1px solid rgba(140, 255, 110, .16);
+      border-radius: 28px;
+      background: rgba(255,255,255,.025);
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .guide-card.primary-guide {
+      border-color: rgba(140,255,110,.38);
+      background: rgba(140,255,110,.055);
+    }
+
+    .guide-card h3 {
+      margin: 10px 0 10px;
+      font-size: 1.45rem;
+    }
+
+    .guide-card p {
+      margin: 0;
+      opacity: .72;
+      line-height: 1.6;
+    }
+
+    .guide-label {
+      display: inline-block;
+      color: #84df67;
+      font-weight: 800;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      font-size: .82rem;
+    }
+
+    .contact-strip {
+      margin-top: 72px;
+      padding: 30px;
+      border: 1px solid rgba(140,255,110,.2);
+      border-radius: 28px;
+      background: rgba(255,255,255,.025);
+    }
+
+    .contact-strip h3 {
+      margin: 8px 0 12px;
+      font-size: 1.55rem;
+    }
+
+    .contact-strip p {
+      line-height: 1.65;
+      opacity: .75;
+    }
+
+    .section-space {
+      padding-top: 78px;
+    }
+
+    @media (min-width: 760px) {
+      .guide-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .guide-card.primary-guide {
+        grid-column: 1 / -1;
+      }
+    }
+  </style>
 </head>
+
 <body>
+
 <header>
   <div class="wrap nav">
+
     <a class="brand" href="#top">
       <img src="assets/lawn-order-profile.png" alt="Lawn & Order">
       <span>LAWN & ORDER</span>
     </a>
-    <button class="menu-btn" aria-label="Menü öffnen">Menü</button>
+
+    <button class="menu-btn" aria-label="Menü öffnen">
+      Menü
+    </button>
+
     <nav>
-      <a href="#empfehlungen">Empfehlungen</a>
       <a href="#wissen">Rasenwissen</a>
-      <a href="#kooperationen">Kooperationen</a>
+      <a href="#empfehlungen">Empfehlungen</a>
       <a href="#ueber">Über Lawn & Order</a>
+      <a href="#kontakt">Kontakt</a>
     </nav>
+
   </div>
 </header>
 
+
 <main id="top">
+
+  <!-- HERO -->
   <section class="hero">
     <div class="wrap hero-grid">
+
       <div>
-        <div class="kicker">Rasenpflege ohne Marketing-Geschwurbel</div>
-        <h1>Dichter Rasen.<br>Ehrliche Tests.<br>Klare Ansagen.</h1>
-        <p class="lead">Ich zeige, was auf einer echten Rasenfläche funktioniert, was sich lohnt und wo man sich das Geld sparen kann. Die Empfehlungen hier basieren auf Produkten, die bei mir selbst im Einsatz sind.</p>
+        <div class="kicker">RASENPFLEGE VERSTÄNDLICH ERKLÄRT</div>
+
+        <h1>
+          Dichter Rasen.<br>
+          Klare Antworten.<br>
+          Aus der Praxis.
+        </h1>
+
+        <p class="lead">
+          Lawn & Order beschäftigt sich mit den Fragen, die bei der
+          Rasenpflege wirklich auftauchen. Verständlich erklärt,
+          praktisch umgesetzt und auf einer echten Rasenfläche ausprobiert.
+        </p>
+
         <div class="actions">
-          <a class="btn primary" href="#empfehlungen">Meine Empfehlungen</a>
-          <a class="btn" href="#wissen">Rasenwissen</a>
+          <a class="btn primary" href="#wissen">Zum Rasenratgeber</a>
+          <a class="btn" href="#empfehlungen">Meine Empfehlungen</a>
         </div>
+
         <div class="stats">
-          <div class="stat"><strong>Praxis statt Prospekt</strong><span>Produkte im eigenen Garten getestet</span></div>
-          <div class="stat"><strong>Klare Meinung</strong><span>Stärken und Schwächen benennen</span></div>
-          <div class="stat"><strong>Rasen im Fokus</strong><span>Pflege, Technik und Bewässerung</span></div>
+          <div class="stat">
+            <strong>Praxis</strong>
+            <span>statt Prospekt</span>
+          </div>
+
+          <div class="stat">
+            <strong>Verständlich</strong>
+            <span>statt unnötig kompliziert</span>
+          </div>
+
+          <div class="stat">
+            <strong>Selektiv</strong>
+            <span>bei Produktempfehlungen</span>
+          </div>
         </div>
       </div>
+
       <div class="hero-logo">
-        <img src="assets/lawn-order-profile.png" alt="Martin von Lawn & Order">
+        <img src="assets/lawn-order-profile.png"
+             alt="Martin von Lawn & Order">
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- RATGEBER -->
+  <section id="wissen" class="section-space">
+    <div class="wrap">
+
+      <div class="kicker">RASENRATGEBER</div>
+      <h2>Rasenwissen aus der Praxis</h2>
+
+      <p class="lead">
+        Hier entstehen Schritt für Schritt ausführliche Ratgeber zu den
+        Fragen, die in meinen Videos, Kommentaren und Lives immer wieder
+        auftauchen.
+      </p>
+
+
+      <div class="guide-grid">
+
+        <a class="guide-card primary-guide"
+           href="rasen-neu-anlegen.html">
+
+          <span class="guide-label">Erster großer Ratgeber</span>
+
+          <h3>Rasen neu anlegen oder komplett renovieren</h3>
+
+          <p>
+            Zwei Wege zur neuen Rasenfläche: die gründliche Neuanlage
+            mit Bodenbearbeitung und die schnellere Renovierung des
+            vorhandenen Bestands. Mit Entscheidungshilfe, Ablauf und
+            den häufigsten Fehlern bei der Aussaat.
+          </p>
+
+        </a>
+
+
+        <div class="guide-card">
+          <span class="guide-label">Mähen</span>
+
+          <h3>Rasen richtig mähen</h3>
+
+          <p>
+            Mähhöhe, Mähfrequenz, Drittelregel, scharfe Messer und die
+            Frage, wann Fangkorb oder Mulchen sinnvoll sind.
+          </p>
+        </div>
+
+
+        <div class="guide-card">
+          <span class="guide-label">Bewässerung</span>
+
+          <h3>Rasen richtig bewässern</h3>
+
+          <p>
+            Wassermengen, Intervalle, Trockenstress und warum häufiges
+            oberflächliches Bewässern nicht automatisch besser ist.
+          </p>
+        </div>
+
+
+        <div class="guide-card">
+          <span class="guide-label">Düngung</span>
+
+          <h3>Rasendünger verstehen</h3>
+
+          <p>
+            Stickstoff, Phosphor und Kalium verständlich erklärt.
+            Dazu Düngezeitpunkte und die Unterschiede zwischen Frühjahrs-,
+            Sommer- und Herbstdüngung.
+          </p>
+        </div>
+
+
+        <div class="guide-card">
+          <span class="guide-label">Saat & Nachsaat</span>
+
+          <h3>Die richtige Saatgutmischung</h3>
+
+          <p>
+            Warum nicht jedes Rasensaatgut gleich ist, wann eine
+            Nachsaat sinnvoll wird und worauf es während der Keimung
+            wirklich ankommt.
+          </p>
+        </div>
+
+
+        <div class="guide-card">
+          <span class="guide-label">Probleme</span>
+
+          <h3>Krankheiten, Pilze & Unkraut</h3>
+
+          <p>
+            Rotspitzigkeit, Schneeschimmel, Hexenringe, Moos,
+            typische Unkräuter und andere Probleme richtig einordnen.
+          </p>
+        </div>
+
+
+        <div class="guide-card">
+          <span class="guide-label">Boden & Pflege</span>
+
+          <h3>Rasen verbessern</h3>
+
+          <p>
+            Vertikutieren, Lüften, Aerifizieren, Sanden und
+            Bodenverbesserung: Was davon wann tatsächlich sinnvoll ist.
+          </p>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <section id="empfehlungen">
-    <div class="wrap">
-      <div class="section-head">
-        <div>
-          <div class="kicker">Selbst im Einsatz</div>
-          <h2>Meine Empfehlungen</h2>
-        </div>
-        <p>Keine endlose Produktliste. Hier stehen nur Dinge, die ich selbst nutze und aus eigener Erfahrung einordnen kann.</p>
-      </div>
 
-      <div class="grid">
-        <article class="card product">
-          <span class="tag">Saatgut</span>
+  <!-- EMPFEHLUNGEN -->
+  <section id="empfehlungen" class="section-space">
+    <div class="wrap">
+
+      <div class="kicker">SELBST IM EINSATZ</div>
+      <h2>Meine Empfehlungen</h2>
+
+      <p class="lead">
+        Keine endlose Produktliste. Hier stehen nur Produkte und Geräte,
+        die ich selbst nutze oder aus eigener Anwendung einordnen kann.
+      </p>
+
+
+      <div class="guide-grid">
+
+        <div class="guide-card">
+          <span class="guide-label">Saatgut</span>
+
           <h3>Eurogreen Rasana Super</h3>
-          <p>Meine Saatmischung für einen dichten, hochwertigen Hausrasen. Sie ist die Basis meiner eigenen Fläche.</p>
-          <div class="meta">Bei mir im langfristigen Einsatz.</div>
-          <a class="btn disabled" href="#">Amazon-Link folgt</a>
-        </article>
 
-        <article class="card product">
-          <span class="tag">Düngung & Unkraut</span>
+          <p>
+            Die Saatmischung bildet die Grundlage meiner eigenen
+            Rasenfläche und befindet sich bei mir im langfristigen Einsatz.
+          </p>
+        </div>
+
+
+        <div class="guide-card">
+          <span class="guide-label">Düngung & Unkraut</span>
+
           <h3>TerraUno Rasendünger mit Unkrautvernichter</h3>
-          <p>Für die kombinierte Nährstoffversorgung und Bekämpfung typischer zweikeimblättriger Rasenunkräuter.</p>
-          <div class="meta">Von mir selbst angewendet und dokumentiert.</div>
-          <a class="btn disabled" href="#">Affiliate-Link folgt</a>
-        </article>
 
-        <article class="card product">
-          <span class="tag">Bewässerung</span>
+          <p>
+            Von mir selbst angewendet und dokumentiert. Gedacht für
+            Nährstoffversorgung und die Bekämpfung typischer
+            zweikeimblättriger Rasenunkräuter.
+          </p>
+        </div>
+
+
+        <div class="guide-card">
+          <span class="guide-label">Bewässerung</span>
+
           <h3>GARDENA AquaPrecise</h3>
-          <p>Die oberirdische Variante nutze ich für individuell geformte Bewässerungsbereiche auf meiner Rasenfläche.</p>
-          <div class="meta">Für flexible, oberirdische Bewässerung.</div>
-          <a class="btn disabled" href="#">Amazon-Link folgt</a>
-        </article>
 
-        <article class="card product">
-          <span class="tag">Rasenmäher</span>
+          <p>
+            Die oberirdische Variante nutze ich für individuell geformte
+            Bewässerungsbereiche auf meiner eigenen Rasenfläche.
+          </p>
+        </div>
+
+
+        <div class="guide-card">
+          <span class="guide-label">Rasenmäher</span>
+
           <h3>EGO LM2236E-SP</h3>
-          <p>Mein Akku-Rasenmäher für die regelmäßige Pflege einer anspruchsvolleren Hausrasenfläche.</p>
-          <div class="meta">Im regelmäßigen Mäheinsatz.</div>
-          <a class="btn disabled" href="#">Amazon-Link folgt</a>
-        </article>
 
-        <article class="card product">
-          <span class="tag">Düngung</span>
+          <p>
+            Mein Akku-Rasenmäher für die regelmäßige Pflege einer
+            anspruchsvolleren Hausrasenfläche.
+          </p>
+        </div>
+
+
+        <div class="guide-card">
+          <span class="guide-label">Düngung</span>
+
           <h3>GARDENA Streuwagen L</h3>
-          <p>Für eine möglichst gleichmäßige Verteilung von Rasendünger auf größeren Flächen.</p>
-          <div class="meta">Von mir für die regelmäßige Düngung genutzt.</div>
-          <a class="btn disabled" href="#">Amazon-Link folgt</a>
-        </article>
+
+          <p>
+            Von mir regelmäßig zur möglichst gleichmäßigen Verteilung
+            von Rasendünger auf größeren Flächen eingesetzt.
+          </p>
+        </div>
+
       </div>
 
-      <div class="note"><strong>Transparenz:</strong> Künftige Affiliate-Links werden klar gekennzeichnet. Für dich ändert sich der Preis dadurch nicht. Ich erhalte bei einem qualifizierten Kauf gegebenenfalls eine Provision.</div>
+
+      <div class="contact-strip">
+        <strong>Transparenz:</strong>
+        Künftige Affiliate-Links werden klar gekennzeichnet.
+        Für dich ändert sich der Preis dadurch nicht.
+        Bei einem qualifizierten Kauf kann ich gegebenenfalls
+        eine Provision erhalten.
+      </div>
+
     </div>
   </section>
 
-  <section id="wissen">
+
+  <!-- HERSTELLERKONTAKT -->
+  <section id="kontakt" class="section-space">
     <div class="wrap">
-      <div class="section-head">
-        <div>
-          <div class="kicker">Einfach erklärt</div>
-          <h2>Rasenwissen</h2>
-        </div>
-        <p>Dieser Bereich wächst Schritt für Schritt. Ziel sind kurze, verständliche Antworten auf die Fragen, die in meinen Videos und Lives immer wieder auftauchen.</p>
+
+      <div class="contact-strip">
+
+        <div class="kicker">HERSTELLER & UNTERNEHMEN</div>
+
+        <h3>Produkt oder Zusammenarbeit vorstellen?</h3>
+
+        <p>
+          Hersteller aus den Bereichen Rasenpflege, Bewässerung und
+          Gartentechnik können mich gerne kontaktieren. Ich bin
+          grundsätzlich offen für passende Produkttests und Kooperationen,
+          sofern das Produkt thematisch zu Lawn & Order passt und eine
+          unabhängige Einordnung möglich bleibt.
+        </p>
+
+        <p>
+          <a class="btn"
+             href="mailto:passonmartin@gmx.de?subject=Kooperationsanfrage%20Lawn%20%26%20Order">
+            Kooperationsanfrage senden
+          </a>
+        </p>
+
       </div>
-      <div class="knowledge">
-        <div class="topic"><b>Mähen</b><span>Mähhöhe, Schnittfrequenz, scharfe Messer und Fangkorb.</span></div>
-        <div class="topic"><b>Bewässerung</b><span>Wassermenge, Intervalle und sinnvolle Automatisierung.</span></div>
-        <div class="topic"><b>Düngen</b><span>Nährstoffversorgung verständlich und ohne unnötige Komplexität.</span></div>
-        <div class="topic"><b>Saatgut</b><span>Warum die richtige Mischung über Jahre einen Unterschied macht.</span></div>
-      </div>
+
     </div>
   </section>
 
-  <section id="kooperationen">
-    <div class="wrap split">
-      <div class="copy-box">
-        <div class="kicker">Für Hersteller</div>
-        <h3>Kooperationen mit Substanz</h3>
-        <p>Lawn & Order beschäftigt sich mit Rasenpflege, Bewässerung und Gartentechnik. Produkte werden unter realen Bedingungen eingesetzt und fachlich eingeordnet.</p>
-        <div class="checks">
-          <div class="check"><i>✓</i><span>Praxistests im eigenen Garten</span></div>
-          <div class="check"><i>✓</i><span>TikTok-Videos und LIVE-Formate</span></div>
-          <div class="check"><i>✓</i><span>Langfristige statt beliebige Produktintegration</span></div>
-          <div class="check"><i>✓</i><span>Klare, nachvollziehbare Einordnung</span></div>
+
+  <!-- ÜBER MICH -->
+  <section id="ueber" class="section-space">
+    <div class="wrap">
+
+      <div class="guide-card">
+
+        <div class="kicker">ÜBER LAWN & ORDER</div>
+
+        <h2>Ich bin Martin.</h2>
+
+        <p>
+          Ich beschäftige mich intensiv mit hochwertiger Rasenpflege
+          und teste Methoden, Geräte und Produkte auf meiner eigenen
+          Fläche.
+        </p>
+
+        <p>
+          Mein Anspruch ist einfach: verständlich erklären,
+          sauber ausprobieren und keine Empfehlung aussprechen,
+          hinter der ich nicht selbst stehe.
+        </p>
+
+        <p>
+          Lawn & Order soll eine verlässliche Anlaufstelle für Menschen
+          werden, die ihren Rasen verbessern wollen, ohne aus jedem
+          Thema eine Wissenschaft zu machen.
+        </p>
+
+
+        <div class="actions">
+
+          <a class="btn"
+             href="https://www.tiktok.com/@lawnandorder24"
+             target="_blank"
+             rel="noopener">
+            TikTok @lawnandorder24
+          </a>
+
         </div>
-        <p><strong>Kontakt:</strong> Geschäftliche E-Mail-Adresse folgt.</p>
+
       </div>
 
-      <div class="copy-box" id="ueber">
-        <div class="kicker">Über Lawn & Order</div>
-        <h3>Ich bin Martin.</h3>
-        <p>Ich beschäftige mich intensiv mit hochwertiger Rasenpflege und teste Methoden, Geräte und Produkte auf meiner eigenen Fläche. Mein Anspruch ist einfach: verständlich erklären, sauber testen und keine Empfehlung aussprechen, hinter der ich nicht selbst stehe.</p>
-        <p>Lawn & Order soll eine verlässliche Anlaufstelle für Menschen werden, die ihren Rasen verbessern wollen, ohne aus jedem Thema eine Wissenschaft zu machen.</p>
-
-        <div class="socials">
-          <a class="social-link" href="https://www.tiktok.com/@lawnandorder24" target="_blank" rel="noopener">
-            <strong>TikTok</strong><small>@lawnandorder24</small>
-          </a>
-          <a class="social-link" href="#" aria-label="Instagram-Link wird ergänzt">
-            <strong>Instagram</strong><small>Link folgt</small>
-          </a>
-        </div>
-      </div>
     </div>
   </section>
+
 </main>
+
 
 <footer>
   <div class="wrap footer-grid">
-    <div>© <span id="year"></span> Lawn & Order</div>
+
+    <div>
+      © <span id="year"></span> Lawn & Order
+    </div>
+
     <div class="footer-links">
       <a href="impressum.html">Impressum</a>
       <a href="datenschutz.html">Datenschutz</a>
     </div>
+
   </div>
 </footer>
+
+
 <script src="assets/site.js"></script>
-  <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "a2f7cc6054b54eefbcc6976ba16e450b"}'></script><!-- End Cloudflare Web Analytics -->
+
+<!-- Cloudflare Web Analytics -->
+<script type="module"
+        src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon='{"token":"a2f7cc6054b54eefbcc6976ba16e450b"}'>
+</script>
+<!-- End Cloudflare Web Analytics -->
+
 </body>
 </html>
