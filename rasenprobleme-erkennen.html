@@ -67,24 +67,12 @@
       margin-bottom:12px;
     }
 
+    /*
+      Die Bildbereiche bleiben im HTML vorbereitet,
+      werden aber vorerst vollständig ausgeblendet.
+    */
     .problem-image{
-      margin:24px 0;
-      overflow:hidden;
-      border-radius:22px;
-      border:1px solid rgba(140,255,110,.15);
-      background:rgba(255,255,255,.025);
-    }
-
-    .problem-image img{
-      display:block;
-      width:100%;
-      height:auto;
-    }
-
-    .problem-caption{
-      padding:12px 16px;
-      font-size:.88rem;
-      opacity:.65;
+      display:none;
     }
 
     .solution{
@@ -335,10 +323,6 @@
     <img src="assets/schneeschimmel.jpg"
          alt="Schneeschimmel im Rasen"
          loading="lazy">
-    <div class="problem-caption">
-      Schneeschimmel kann rundliche, grau-braune und teilweise
-      zusammenfließende Schadstellen verursachen.
-    </div>
   </div>
 
   <p>
@@ -405,10 +389,6 @@
     <img src="assets/hexenring.jpg"
          alt="Hexenring im Rasen"
          loading="lazy">
-    <div class="problem-caption">
-      Hexenringe können als kreisförmige Verfärbung, kräftiger grüner
-      Ring oder Reihe von Fruchtkörpern sichtbar werden.
-    </div>
   </div>
 
   <p>
@@ -558,16 +538,12 @@
     <img src="assets/poa-annua.jpg"
          alt="Poa annua im Rasen"
          loading="lazy">
-    <div class="problem-caption">
-      Poa annua fällt häufig durch ihre hellere Farbe und die sehr
-      niedrig erscheinenden Samenstände auf.
-    </div>
   </div>
 
   <p>
     Poa annua ist selbst ein Gras. Genau das macht die Bekämpfung im
-    Rasen schwierig: Ein Mittel, das ein breitblättriges Unkraut
-    bekämpft und Gräser schont, löst dieses Problem nicht.
+    Rasen schwierig: Ein Mittel, das breitblättrige Unkräuter bekämpft
+    und Gräser schont, löst dieses Problem nicht.
   </p>
 
   <p>
@@ -596,13 +572,13 @@
       </li>
 
       <li>
-        Die gewünschte Rasennarbe durch angepasste Düngung und regelmäßiges
-        Mähen möglichst dicht halten.
+        Die gewünschte Rasennarbe durch angepasste Düngung und
+        regelmäßiges Mähen möglichst dicht halten.
       </li>
 
       <li>
-        Sehr häufige oberflächliche Bewässerung vermeiden. Bei etabliertem
-        Rasen bedarfsgerecht und durchdringend bewässern.
+        Sehr häufige oberflächliche Bewässerung vermeiden. Bei
+        etabliertem Rasen bedarfsgerecht und durchdringend bewässern.
       </li>
 
       <li>
@@ -747,7 +723,6 @@
   <div class="warning">
     Pflanzenschutzmittel nur entsprechend ihrer aktuellen Zulassung,
     Gebrauchsanweisung und Anwendungsbestimmungen einsetzen.
-    „Viel hilft viel“ gilt hier ausdrücklich nicht.
   </div>
 
 </section>
@@ -1028,15 +1003,37 @@
   <h3>Stattdessen würde ich systematisch prüfen:</h3>
 
   <ul>
-    <li>Ist nur das Blatt geschädigt oder lässt sich die Pflanze leicht aus dem Boden ziehen?</li>
-    <li>Ist der Boden trocken, normal feucht oder wassergesättigt?</li>
-    <li>Gibt es Pilzmyzel, rote Fäden, Fruchtkörper oder andere auffällige Strukturen?</li>
-    <li>Ist die Schadstelle kreisförmig, flächig oder folgt sie einem Streumuster?</li>
-    <li>Sind Wurzeln vorhanden und gesund?</li>
-    <li>Wurde kurz zuvor gedüngt oder ein Pflanzenschutzmittel eingesetzt?</li>
-    <li>Hat ein Tier die Stelle regelmäßig benutzt?</li>
-    <li>Gab es Hitze, Starkregen, Frost oder längere Blattnässe?</li>
-    <li>Handelt es sich überhaupt um abgestorbenen Rasen oder wächst dort eine andere Grasart?</li>
+    <li>
+      Ist nur das Blatt geschädigt oder lässt sich die Pflanze leicht
+      aus dem Boden ziehen?
+    </li>
+    <li>
+      Ist der Boden trocken, normal feucht oder wassergesättigt?
+    </li>
+    <li>
+      Gibt es Pilzmyzel, rote Fäden, Fruchtkörper oder andere auffällige
+      Strukturen?
+    </li>
+    <li>
+      Ist die Schadstelle kreisförmig, flächig oder folgt sie einem
+      Streumuster?
+    </li>
+    <li>
+      Sind Wurzeln vorhanden und gesund?
+    </li>
+    <li>
+      Wurde kurz zuvor gedüngt oder ein Pflanzenschutzmittel eingesetzt?
+    </li>
+    <li>
+      Hat ein Tier die Stelle regelmäßig benutzt?
+    </li>
+    <li>
+      Gab es Hitze, Starkregen, Frost oder längere Blattnässe?
+    </li>
+    <li>
+      Handelt es sich überhaupt um abgestorbenen Rasen oder wächst dort
+      eine andere Grasart?
+    </li>
   </ul>
 
   <div class="note">
